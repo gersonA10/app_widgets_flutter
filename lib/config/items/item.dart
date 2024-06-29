@@ -51,4 +51,16 @@ const appItems = <Item>[
     link: '/controls',
     icon: Icons.control_camera_sharp,
   ),
+  Item(
+    title: 'Progress Screen',
+    subTitle: 'Controles de progreso',
+    link: '/progress',
+    icon: Icons.circle_outlined,
+  ),
+  Item(
+    title: 'Scroll',
+    subTitle: 'Control de scroll',
+    link: '/scroll',
+    icon: Icons.blur_circular,
+  ),
 ];

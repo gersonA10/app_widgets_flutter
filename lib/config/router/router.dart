@@ -1,10 +1,4 @@
-import 'package:aplicacion_numero_dos_fljp/presentation/screens/animated/animated_widget_screen.dart';
-import 'package:aplicacion_numero_dos_fljp/presentation/screens/buttons/buttons_screens.dart';
-import 'package:aplicacion_numero_dos_fljp/presentation/screens/cards/cards.dart';
-import 'package:aplicacion_numero_dos_fljp/presentation/screens/controls/controls_screens.dart';
-import 'package:aplicacion_numero_dos_fljp/presentation/screens/home/home_screen.dart';
-import 'package:aplicacion_numero_dos_fljp/presentation/screens/introduction/introduction_screen.dart';
-import 'package:aplicacion_numero_dos_fljp/presentation/screens/snackbars/snackbar_screen.dart';
+import 'package:aplicacion_numero_dos_fljp/presentation/screens/screen.dart';
 import 'package:go_router/go_router.dart';
 
 final appRouter = GoRouter(
@@ -44,5 +38,15 @@ final appRouter = GoRouter(
     path: ControlsScreen.path,
     name: ControlsScreen.name,
     builder: (context, state) => const ControlsScreen(),
+  ),
+   GoRoute(
+    path: ProgressScreen.path,
+    name: ProgressScreen.name,
+    builder: (context, state) => const ProgressScreen(),
+  ),
+  GoRoute(
+    path: ScrollScreen.path,
+    name: ScrollScreen.name,
+    builder: (context, state) => const ScrollScreen(),
   ),
 ]);
